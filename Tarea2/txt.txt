@@ -1,0 +1,17 @@
+MyVariable
+MYVARIABLE
+myvariable
+x
+i
+x1
+i1
+_myvariable
+$myvariable
+sum_of_array
+javadesdecero
+My Variable
+123Java
+a+c
+variable-2
+sum_&_difference
+$

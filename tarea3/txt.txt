@@ -1,0 +1,197 @@
+begin
+   x <- 3;
+   y <- 5;
+   if (x <= y)
+   begin
+      x <- x + 1;
+      y <- y + x
+   end
+end
+
+
+
+begin opt_stmts end
+begin smts_lst end
+begin smts smts_lst1 end
+begin id <- expr stmts_lst1 end
+begin id <- term expr1 stmts_lst1 end
+begin id <- factor term1 expr1 stmts_lst1 end
+begin id <- 3 term1 expr1 stmts_lst1 end
+begin id <- 3 expr1 stmts_lst1 end
+beign id <- 3 stmts_lst1 end
+begin id <- 3; stmts_lst smts_lst1 end
+begin id <- 3; stmt smts_lst1 end
+begin id <- 3; id <- expr smts_lst1 end
+begin id <- 3; id <- term expr1 smts_lst1 end
+begin id <- 3; id <- factor term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5 term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5 expr1 smts_lst1 end
+begin id <- 3; id <- 5 smts_lst1 end
+begin id <- 3; id <- 5; stmts_lstend
+begin id <- 3; id <- 5; stmt end ------------------------------------
+begin id <- 3; id <- 5; if(expresion)stmt stmt1 end
+begin id <- 3; id <- 5; if(expr expresion1)stmt stmt1 end
+begin id <- 3; id <- 5; if(term expr1 expresion1)stmt end
+begin id <- 3; id <- 5; if(factor term1 expr1 expresion1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x term1 expr1 expresion1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x expr1 expresion1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x expresion1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= expr)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= term expr1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= factor term1 expr1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y term1 expr1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y expr1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y expr1)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)stmt stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin opt_stmts end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin stmt_lst end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin smts smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- expr smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- term expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- factor term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + term expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + factor term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1 term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; stmts_lst end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; smts smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- expr smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- term expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- factor term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + term expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + factor term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x term1 expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x expr1 smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x smts_lst1 end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end stmt1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else smts smts_lst1 end --------------------------------------
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- expr smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- term expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- factor term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( expr ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( term expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( factor term1 expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 term1 expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + term expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + factor term1 expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x term1 expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x expr1 ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * term expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * factor term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - term expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - factor term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34 term1 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34 expr1 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34 smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; stmt_lst end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; smts smts_lst1 end ------------------------1
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; smts smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(expresion) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(expr expresion1) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(term expr1 expresion1) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(factor term1 expr1 expresion1) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(x term1 expr1 expresion1) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(x expr1 expresion1) stmt smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(x expr1 expresion1) begin opt_stmts end smts_lst1 end
+begin id <- 3; id <- 5; if(x <= y)begin x <- x + 1; y <- y + x end else x <- ( 1 + x ) * z - 34; while(x expr1 expresion1) begin opt_stmts end smts_lst1 end
+
+
+
+begin
+   while( x > z + 2)
+   begin
+      z <- x + z;
+      y <- 2 * z
+   end;
+   x <- x + x
+end
+
+
+begin opt_stmts end
+begin stmt_lst end
+begin smts smts_lst1 end
+begin while(expresion) stmt smts_lst1 end
+begin while(expr expresion1) stmt smts_lst1 end
+begin while(term expr1 expresion1) stmt smts_lst1 end
+begin while(factor term1 expr1 expresion1) stmt smts_lst1 end
+begin while(x term1 expr1 expresion1) stmt smts_lst1 end
+begin while(x expr1 expresion1) stmt smts_lst1 end
+begin while(x expresion1) stmt smts_lst1 end
+begin while(x > expr) stmt smts_lst1 end
+begin while(x > term expr1) stmt smts_lst1 end
+begin while(x > factor term1 expr1) stmt smts_lst1 end
+begin while(x > z term1 expr1) stmt smts_lst1 end
+begin while(x > z expr1) stmt smts_lst1 end
+begin while(x > z + term expr1) stmt smts_lst1 end
+begin while(x > z + factor term1 expr1) stmt smts_lst1 end
+begin while(x > z + 2 term1 expr1) stmt smts_lst1 end
+begin while(x > z + 2 expr1) stmt smts_lst1 end
+begin while(x > z + 2) stmt smts_lst1 end
+begin while(x > z + 2) begin opt_stmts end smts_lst1 end
+begin while(x > z + 2) begin stmts_lst end smts_lst1 end
+begin while(x > z + 2) begin stmt smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- expr smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- term expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + term expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + factor term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; stmt_lst end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; stmt smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- expr smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- term expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- factor term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * term expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * factor term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z term1 expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z expr1 smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z smts_lst1 end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; stmt_lst end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; stmt smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- expr smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- term expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- factor term1 expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x term1 expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + term expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + factor term1 expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + x term1 expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + x expr1 smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + x smts_lst1 end
+begin while(x > z + 2) begin z <- x + z; y <- 2 * z end; x <- x + x end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

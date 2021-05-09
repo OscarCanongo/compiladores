@@ -1,0 +1,16 @@
+Jeronimo
+123
+234.45
+123 < 124
+while
+if
+recuerdo
+repeat
+beginnn
+<=
++
+,
+-
+_Identidicador
+Otro_Ident$Ificador
+end
