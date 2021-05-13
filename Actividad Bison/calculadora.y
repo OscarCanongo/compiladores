@@ -42,7 +42,6 @@ term : term MULTI factor   {$$ = $1 * $3;}
      | term DIVIDE factor  {$$ = $1 / $3;}
      | term MODU factor  {$$ = $1 % $3;}
      | term EXPO factor  {$$ = pow($1, $3);}
-     | term DIVIDE factor  {$$ = $1 / $3;}
      | factor
 ;
 
